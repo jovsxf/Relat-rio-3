@@ -23,3 +23,6 @@ writeAJson(pokemons, "fraquezas")
 
 pokemons = db.collection.find({"spawn_chance": {"$gt": 0.3, "$lt": 0.6}})
 writeAJson(pokemons, "spawn_chance")
+
+pokemons = db.collection.find({"multipliers": None})
+writeAJson(pokemons, "multipliers")
